@@ -9,7 +9,7 @@ page_icon="🩺"
 
 @st.cache_resource
 def load_model():
-  return joblib.load("diabetes_model.pk1")
+  return joblib.load("diabetes_model (1).pk1")
 
 model = load_model()
 
