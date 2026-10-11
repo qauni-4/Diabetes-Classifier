@@ -36,13 +36,13 @@ if st.button("Classify"):
   bmi = weight / ((height / 100) ** 2)
 
 input_data = pd.DataFrame([{
-"RIDAGEYR": age,
-"BMXHT": height,
-"BMXWT": weight,
-"BMXBMI": bmi,
-"LBXGH": hba1c,
-"LBXTC": cholesterol,
-"family_history": 1 if family_history == "Yes" else 0
+  "RIDAGEYR": age,
+  "BMXHT": height,
+  "BMXWT": weight,
+  "BMXBMI": bmi,
+  "LBXGH": hba1c,
+  "LBXTC": cholesterol,
+  "family_history": 1 if family_history == "Yes" else 0
 }])
 
 prediction = int(model.predict(input_data)[0])
