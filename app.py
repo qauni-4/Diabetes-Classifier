@@ -33,7 +33,7 @@ family_history = st.radio(
 )
 
 if st.button("Classify"):
-bmi = weight / ((height / 100) ** 2)
+  bmi = weight / ((height / 100) ** 2)
 
 input_data = pd.DataFrame([{
 "RIDAGEYR": age,
