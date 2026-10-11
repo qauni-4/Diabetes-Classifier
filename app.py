@@ -49,9 +49,9 @@ prediction = int(model.predict(input_data)[0])
 probability = model.predict_proba(input_data)[0][1]
 
 if prediction == 1:
-st.warning("The model predicts: Recorded diagnosis class")
+  st.warning("The model predicts: Recorded diagnosis class")
 else:
-st.success("The model predicts: No recorded diagnosis class")
+  st.success("The model predicts: No recorded diagnosis class")
 
 st.write(f"Model probability for the recorded-diagnosis class: {probability:.1%}")
 
